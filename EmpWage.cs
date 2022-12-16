@@ -8,18 +8,29 @@ namespace EmpWage
 {
     internal class EmpWage
     {
-        public static void Empcheck()
+        public static void DialyEmpWage()
         {
+            int FULL_TIME = 1;
+            int EMP_WAGE_PER_HOUR = 20;
+
+            int emphrs = 0;
+            int empwage = 0;
+
             Random random = new Random();
-            int x = random.Next(0, 2);
-            if (x == 0)
+            int empcheck = random.Next(0, 2);
+
+            if (empcheck == FULL_TIME)
             {
-                Console.WriteLine("employee is Absent");
+                Console.WriteLine("employee is Present");
+                emphrs = 8;
             }
             else
             {
-                Console.WriteLine("Employee is Present");
+                Console.WriteLine("Employee is Absent");
+                emphrs = 0;
             }
+            empwage = emphrs * EMP_WAGE_PER_HOUR;
+            Console.WriteLine("Emp Wage : " + empwage);
         }
     }
 }
