@@ -11,7 +11,7 @@ namespace EmpWage
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome to EmpWage");
-            EmpWage.DialyEmpWage();
+            EmployeeWage.EmployeeWagecheck();
             Console.ReadLine();
         }
     }
