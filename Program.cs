@@ -12,7 +12,6 @@ namespace EmpWage
         {
             Console.WriteLine("Welcome to EmpWage");
             Console.WriteLine("------------------");
-            //EmpWagewhile.emp();
             empwageclass.ComputeEmpWage();
             Console.ReadLine();
         }
