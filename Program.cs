@@ -8,12 +8,12 @@ namespace EmpWage
 {
     internal class Program
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
-            Console.WriteLine("Welcome to EmpWage");
-            Console.WriteLine("------------------");
-            //EmpWagewhile.emp();
-            empwageclass.ComputeEmpWage();
+            //Console.WriteLine("Welcome to EmpWage");
+            //Console.WriteLine("------------------");
+            empwageclass.ComputeEmpWage("Dmart",20, 2, 10);
+            empwageclass.ComputeEmpWage("relience", 10, 4, 20);
             Console.ReadLine();
         }
     }
