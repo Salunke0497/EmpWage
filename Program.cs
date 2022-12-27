@@ -10,10 +10,14 @@ namespace EmpWage
     {
         public static void Main(string[] args)
         {
-            //Console.WriteLine("Welcome to EmpWage");
-            //Console.WriteLine("------------------");
-            empwageclass.ComputeEmpWage("Dmart",20, 2, 10);
-            empwageclass.ComputeEmpWage("relience", 10, 4, 20);
+            Console.WriteLine("Welcome to EmpWage");
+            Console.WriteLine("------------------");
+            EmpWageBuilderObject dmart = EmpWageBuilderObject("Dmart",20, 2, 10);
+            dmart.computeEmpWage();
+            Console.WriteLine(dmart.toString());
+            EmpWageBuilderObject relience = EmpWageBuilderObject("relience", 10, 4, 20);
+            relience.computeEmpWage();
+            Console.WriteLine(relience.toString());
             Console.ReadLine();
         }
     }
